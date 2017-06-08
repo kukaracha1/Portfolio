@@ -1,0 +1,459 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+#container
+{
+	width:1200px;
+	margin: 0 auto;	
+	/* padding-left:100px; */
+	/* padding-right:100px; */
+
+	font-size:14px;
+	font-family:	Tahoma, serif;
+/* background-size:40%; */
+}
+
+/*--------------=  HEAD  =----------------------------*/
+#top-head
+{
+	background:#af9559;
+	height:20px;
+	padding: 20px 100px 20px 130px;
+	color:#fefefe;
+}
+#top-head div
+{
+	display:inline;
+	padding-right: 40px;
+}
+#top-head a , #top-head a:visited
+{
+	color:#fefefe;
+}
+.doted	/*подчеркивание пунктиром*/
+{
+	text-decoration: none;
+    border-bottom: 1px dashed #fefefe;
+}
+/*отступы между дивами*/
+#top-head div:first-child
+{
+	float:left;
+	padding-right:75px;
+}
+#top-head div:last-child
+{
+	padding-right:0px;
+	display:inline-flex;
+}
+#help a:nth-child(2)
+{
+	padding-left:15px;
+	padding-right:15px;
+}
+
+/*----=  Image =-------*/
+.sprite
+{
+	padding:0;
+	display:inline-block !important;
+}
+#phone
+{
+	width:18px;
+	height:18px;
+	background: url(../img/Sprites.png) 0 0;
+	margin-right:10px;
+}
+#vk
+{
+	width:22px;
+	height:22px;
+	background: url(../img/Sprites.png) -25px 0;	
+	margin-left:20px;
+}
+
+
+
+/*-------------------------------------*/
+#logo-head
+{
+	background:#fefefe;
+	height:50px;
+	color: #777777;
+	padding: 20px 115px 20px 130px;
+	border-bottom:1px solid #d9d9d9;
+}
+
+#logo-head div
+{
+	display:inline-table;
+}
+
+#logo
+{
+	width:350px;
+	text-align:center;
+	margin-right:30px;
+}
+#logo-head a
+{
+	text-decoration:none;
+	color:inherit;
+}
+#logo img
+{
+	width:350px;
+}
+#logo-head input
+{
+	width:380px;
+	height: 40px;
+	color:#919191;
+}
+#search-but
+{
+    background: url(../img/Sprites.png) -51px -1px;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    top: 5;
+    left: -35px	
+}
+#cart
+{
+	width:150px;
+	height:40px;
+	
+	color: #444444;
+	font-size:14px;
+	font-family:Tahoma;
+	text-align:center;
+	margin-left:11px;
+}
+#cart div
+{
+	display:inline-table;
+}
+#cart div:first-child
+{
+    background: url(../img/Sprites.png) -79px -1px;
+	width:25px;
+	height:20px;
+	display:inherit;	
+}
+#cart div:last-child
+{
+	background: url(../img/Sprites.png) -104px 0px;
+	width:24px;
+	height:15px;
+	color:#fff;
+	font-size:12px;	
+}
+
+
+/*-------------=  ћеню  =------------------------*/
+#menu-head
+{
+	background:#fefefe;
+	height:58px;
+	border-bottom:2px solid #ef383f;
+	padding-left:130px;
+}
+.drawer
+{
+	float:left;	
+}
+
+.drawer li
+{
+	position:relative;
+	float:left;
+	display:block;
+	margin-top:10px;
+	margin-bottom:8px;
+	
+}
+.drawer li a
+{
+	display:block;
+	text-decoration:none;
+	color:#503737;
+	font-size:17px;
+	font-family:Tahoma,serif;
+	white-space:nowrap;
+	/* height:12px; */
+	
+	padding:8px 15px 11px 15px;
+}
+.drawer ul a
+{
+	font-size:18px;
+}
+#stocks a
+{
+	color:#c1a25a;
+	font-weight:bold;
+}
+.drawer li:hover a	/*красный кружок*/
+{
+	/* background:url(../img/hov-men.png)  repeat-x; */
+	/* background-size:100%; */
+	background:#ff2d2d;
+	color: #fefefe!important;	
+}
+.drawer ul
+{
+	display:block;
+	position:absolute;
+	top:-9200px;
+	background: rgba(0,0,0,0.8);
+	margin-top:10px;
+}
+.drawer ul li
+{
+	float:none;
+	display:inline;
+}
+.drawer2	/*меню какого-то там уровн¤*/
+{
+	position:absolute;
+	top:-9200px!important;
+	list-style:circle;
+}
+/* .hide ul li a */
+/* { */
+/* font-size:16px;	 */
+/* color:#ebe4d5; */
+/* } */
+	/*2 уровень*/
+.drawer li:hover ul		/*возвращаем меню*/
+{
+	top: 30px;
+    border-top: 8px solid white;
+}
+.drawer li:hover ul a
+{
+	color:#fff!important;
+	background:none;
+}
+.drawer li:hover ul li:hover a	/*ссылка*/
+{
+	background:#af9559;
+}
+
+	/* 3 уровень*/
+.drawer li:hover ul li:hover ul
+{
+	top: -100px!important;
+	left:125px;
+    border-top: 8px solid white;
+}
+
+
+.drawer li:hover ul li:hover ul a
+{
+	color:#ebe4d5!important;
+	font-size:16px;
+}
+.drawer li:hover ul li:hover ul li:hover a
+{
+	color:#fff!important;
+}
+
+/*----------------------------------------*/
+
+/*---------------- Content ---------------*/
+#content
+{
+	display:block;
+}
+#content div
+{
+	margin-bottom:40px;
+	/* border:1px solid gray; */
+	/* background:#aaa; */
+}
+#content div:last-child
+{
+	margin-bottom:0;
+}
+#visual
+{
+	height:460px;
+	background:url(../img/bkgd.jpg) #6d727d no-repeat 0 -200px;
+	padding-left:100px;
+	padding-right:100px;
+}
+#visual img
+{
+	position:absolute;
+	top:0px;
+}
+.half
+{
+	width:500px;
+	height:350px;
+	margin:0!important;
+	float:left;
+}
+.half:last-child:hover
+{
+	background: rgba(0,0,0,0.5);
+}
+		
+.half p
+{
+color:#fff;
+padding: 0 130px 5px 25px;
+font-family:"Roboto Light" , "Myriad Pro";
+font-size:40px;
+}
+#description
+{
+	padding-top:110px;
+}
+.half p:first-child
+{
+color:#aaa;
+font-family:inherit;
+font-size:17px;
+}
+.half p:last-child
+{
+font-family:inherit;
+font-size:14px;
+}
+#brand
+{
+	background:#aaa;
+	height:140px;
+}
+
+#sale
+{
+	height:655px;
+}
+#service
+{
+	height:440px;
+}
+#stock-c
+{
+	height:420px;	
+}
+#new
+{
+	height:615px;	
+}
+#news
+{
+	background: #f4f3eb;
+	height:510px;	
+}
+/*----------------------------------------*/
+
+/*---------------- Footer ---------------*/
+
+#footer
+{
+	height:170px;
+	background: #5d5555;
+	/* background: #666666;  web*/
+	padding: 38px 0px 53px 130px;
+	color:#fff;
+	font-family:Tahona;
+	font-size:12px;
+
+}
+#footer div
+{
+	float:left;
+	display:block;
+	/* height:170px; */
+	/* border:1px solid #fff; */
+}
+#footer a
+{
+	color:#fff;
+}
+#footer p
+{
+	padding-bottom:14px;
+	height:18px;
+}
+#footer p:first-child
+{
+	font-size:14px;
+}
+#authors
+{
+	float:left;
+	width:270px;
+}
+
+#authors p:nth-child(2)
+{
+	padding-bottom:30px;	
+}
+
+
+#contacts, #maps
+{
+	width:310px;
+}
+#contacts p span
+{
+	width:18px;
+	height:18px;
+	display:inline-block;
+	margin-right:10px;
+}
+#contacts p:nth-child(2) span
+{
+	background:url(../img/Sprites.png) -136px -2px;
+}
+#contacts p:nth-child(3) span
+{
+	background:url(../img/Sprites.png) 0px 0px;
+}
+#contacts p:nth-child(4) span
+{
+	background:url(../img/Sprites.png) -161px 0px;
+}
+#social
+{
+	/* height:45px !important; */
+	/* width:300px; */
+	display:inline-table;
+	
+}
+#social a
+{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background:url(../img/fb.png);
+	background-repeat: no-repeat!important;
+}
+#social a:first-child
+{
+		background:url(../img/vk.png);
+}
+
+#social a:last-child
+{
+	width:115px;
+	background:url(../img/av.png);
+}
+#maps a
+{
+	display:inline-table;
+	width:100px;
+	height:30px;
+}
+
+/*----------------------------------------*/
+

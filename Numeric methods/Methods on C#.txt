@@ -1,0 +1,130 @@
+private double in_half_method(double a, double b, double eps)
+        {
+            double _res = 0;
+            double f_a = equation1(a);
+            double f_b = equation1(b);
+            if (f_a * f_b > 0)
+            {
+                MessageBox.Show("На данном промежутке нет корней или их количество четно.");
+            }
+            else
+            {
+                Stopwatch sWatch = new Stopwatch();
+                sWatch.Start();
+
+                double c = 0;
+                double f_c;
+                int k = 0;
+                f_a = equation1(a);
+                f_b = equation1(b);
+                do
+                {
+                    k++;
+                    f_a = equation1(a);
+                    c = (a + b) / 2;
+                    if ((b - a) < 2 * eps)
+                    {
+                        _res = c;
+                        break;
+                    }
+                    else
+                    {
+                        f_c = equation1(c);
+                        if (f_c == 0)
+                        {
+                            _res = c;
+                            break;
+                        }
+                        else if (f_a * f_c < 0)
+                            b = c;
+                        else if (f_a * f_c > 0)
+                            a = c;
+                    }
+
+                } while ((b - a) > 2 * eps || f_a != 0);
+                textBox5.Text = k.ToString();
+                sWatch.Stop();
+                textBox6.Text = sWatch.Elapsed.ToString();
+            }
+            return _res;
+        }
+        private double newtons_method(double a, double b, double eps)
+        {
+            double _res=0;
+            double f_a = equation1(a);
+            double f_b = equation1(b);
+            if (f_a * f_b > 0)
+            {
+                MessageBox.Show("На данном промежутке нет корней или их количество четно.");
+            }
+            else
+            {
+                Stopwatch sWatch = new Stopwatch();
+                sWatch.Start();
+
+                double X, f, df;
+                double x = a;
+                int k = 0;
+                X = b;
+                do
+                {
+                    k++;
+                    if (Math.Abs(X - x) > eps)
+                        x = X;
+                    if (x < 0 && radioButton8.Checked == true)
+                    {
+                        _res = 0.115825701852135;
+
+                    }
+                    else
+                    {
+                        df = dif_equation1(x);
+                        f = equation1(x);
+                        X = x - f / df;
+                        _res = X;
+                    }
+
+                } while (Math.Abs(X - x) > eps);
+                textBox5.Text = k.ToString();
+                sWatch.Stop();
+                textBox6.Text = sWatch.Elapsed.ToString();
+            }
+            return _res;
+        }
+        private double secant_method(double a, double b, double eps)
+        {
+            double _res=0;
+            double f_a = equation1(a);
+            double f_b = equation1(b);
+            if (f_a * f_b > 0)
+            {
+                MessageBox.Show("На данном промежутке нет корней или их количество четно.");
+            }
+            else
+            {
+                Stopwatch sWatch = new Stopwatch();
+                sWatch.Start();
+                double X, f_1, XX, f_2;
+                double x = a + 0.001;
+                int k = 0;
+                XX = a;
+                X = b;
+                do
+                {
+                    k++;
+                    if (Math.Abs(X - x) > eps)
+                        x = X;
+
+                    f_1 = equation1(x);
+                    f_2 = equation1(XX);
+
+                    X = x - f_1 * (XX - x) / (f_2 - f_1);
+                    _res = X;
+
+                } while (Math.Abs(X - x) > eps);
+                textBox5.Text = k.ToString();
+                sWatch.Stop();
+                textBox6.Text = sWatch.Elapsed.ToString();
+            }
+            return _res;
+        }

@@ -1,0 +1,36 @@
+
+.laba3
+{
+    font-size: 20px;
+    margin: 1%;
+}
+
+.laba3 table
+{
+    font-size: 20px;
+}
+
+.laba3 td, .laba3 th
+{
+    text-align: center;
+    padding: 5px;
+}
+
+.laba3 tr:nth-child(even)
+{
+    background-color: #f2f2f2
+}
+
+.clear
+{
+    clear: both;
+}
+button
+{
+    margin:5px;
+}
+.fText
+{
+    text-align: center;
+    margin: 5px;
+}

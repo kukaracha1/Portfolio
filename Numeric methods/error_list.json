@@ -1,0 +1,22 @@
+[
+	{
+		"text": "Function is not determined",
+		"code": 0
+	},
+	{
+		"text": "Division by zero",
+		"code": 1
+	},
+	{
+		"text": "Not converge",
+		"code": 2
+	},
+	{
+		"text": "There's no roots or their quantity is an even",
+		"code": 3
+	},
+	{
+		"text": "The Фурье condition is not выполняется",
+		"code": 4
+	}
+]

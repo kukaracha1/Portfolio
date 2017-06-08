@@ -1,0 +1,36 @@
+body
+{
+    background: gray;
+    color: white;
+    
+}
+
+span
+{
+    position:relative;
+}
+
+.hint
+{
+    display:block;
+    position:absolute;
+    /*top:5;
+    left:25;*/
+    width:300px;
+    /*height:100px;*/
+    background:green;
+    border:2px solid black;
+    color:white;
+    padding:5px;
+    z-index: 5;
+}
+.hint h3
+{
+    text-align:center;
+}
+.hint img
+{
+    margin:0 auto;
+}
+
+
