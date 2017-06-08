@@ -1,9 +1,9 @@
 # Portfolio
 
-http://p960155m.bget.ru/gb-ht8.1/shop.html 	- 	страница интернет магазина по шаблону
-http://p960155m.bget.ru/JSCourse/HT 3/ 		- 	список покупок
-http://p960155m.bget.ru/JSCourse/HT 4/ 		- 	подсказки
-http://p960155m.bget.ru/JSCourse/HT 5/		- 	теги
-http://p960155m.bget.ru/JSCourse/HT 6/		- 	картотека
-http://p960155m.bget.ru/NM/laba 3/ 			-	лаба по сараеву (с php)
-http://p960155m.bget.ru/JSCourse/chess/		-	интерфейс шахмат (без интелекта)
+http://p960155m.bget.ru/gb-ht8.1/shop.html 	- 	СЃС‚СЂР°РЅРёС†Р° РёРЅС‚РµСЂРЅРµС‚ РјР°РіР°Р·РёРЅР° РїРѕ С€Р°Р±Р»РѕРЅСѓ
+http://p960155m.bget.ru/JSCourse/HT 3/ 		- 	СЃРїРёСЃРѕРє РїРѕРєСѓРїРѕРє
+http://p960155m.bget.ru/JSCourse/HT 4/ 		- 	РїРѕРґСЃРєР°Р·РєРё
+http://p960155m.bget.ru/JSCourse/HT 5/		- 	С‚РµРіРё
+http://p960155m.bget.ru/JSCourse/HT 6/		- 	РєР°СЂС‚РѕС‚РµРєР°
+http://p960155m.bget.ru/NM/laba 3/ 			-	Р»Р°Р±Р° РїРѕ СЃР°СЂР°РµРІСѓ (СЃ php)
+http://p960155m.bget.ru/JSCourse/chess/		-	РёРЅС‚РµСЂС„РµР№СЃ С€Р°С…РјР°С‚ (Р±РµР· РёРЅС‚РµР»РµРєС‚Р°)
